@@ -1,20 +1,29 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
+import { Provider } from "react-redux";
+import { store } from "./src/redux/store";
+
+import CreateNote from "./src/screens/createNote/CreateNote";
+import Note from "./src/screens/note/Note";
+import ViewCard from "./src/screens/viewCard/ViewCard";
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Provider store={store}>
+      <NavigationContainer>
+        <Stack.Navigator
+          initialRouteName="Note"
+          screenOptions={{ headerShown: false }}
+        >
+          <Stack.Screen name="Note" component={Note}></Stack.Screen>
+          <Stack.Screen name="CreateNote" component={CreateNote}></Stack.Screen>
+          <Stack.Screen name="ViewCard" component={ViewCard}></Stack.Screen>
+        </Stack.Navigator>
+      </NavigationContainer>
+    </Provider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
