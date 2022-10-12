@@ -96,32 +96,32 @@ const styles = StyleSheet.create({
     },
 
     alert: {
-        fontWeight: 'bold',
         color: 'red',
+        fontWeight: 'bold',
     },
 
     textInput: {
-        fontSize: 20,
         width: '80%',
+        fontSize: 20,
+        marginTop: 10,
         marginStart: 5,
         color: '#d5bc74',
         fontWeight: 'bold',
-        marginTop: 10,
     },
 
     surface: {
+        padding: 20,
+        width: '90%',
+        height: '40%',
+        borderRadius: 5,
         marginTop: '30%',
         alignSelf: 'center',
-        borderRadius: 5,
         alignContent: 'center',
-        padding: 20,
-        height: '40%',
-        width: '90%',
     },
 
     button: {
-        marginTop: 40,
         padding: 20,
+        marginTop: 40,
     },
 
     text: {

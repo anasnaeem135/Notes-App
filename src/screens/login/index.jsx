@@ -30,9 +30,11 @@ const Login = ({ navigation }) => {
                 });
             });
     };
+
     const navigateToSignup = () => {
         navigation.navigate('Signup');
     };
+
     return (
         <View style={styles.createNote}>
             <Text style={styles.title}>Login</Text>
@@ -50,11 +52,11 @@ export default Login;
 
 const styles = StyleSheet.create({
     surface: {
-        marginTop: '30%',
-        alignSelf: 'center',
-        borderRadius: 10,
         padding: 20,
         width: '90%',
+        marginTop: '30%',
+        borderRadius: 10,
+        alignSelf: 'center',
     },
     createNote: {
         flex: 1,

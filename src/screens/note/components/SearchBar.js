@@ -27,28 +27,28 @@ export default SearchBar;
 
 const styles = StyleSheet.create({
     searchBar: {
-        alignSelf: 'center',
-        borderRadius: 20,
-        width: '80%',
-        borderColor: 'grey',
         margin: 5,
+        width: '80%',
         borderWidth: 5,
-        backgroundColor: 'transparent',
+        borderRadius: 20,
+        borderColor: 'grey',
+        alignSelf: 'center',
         flexDirection: 'row',
+        backgroundColor: 'transparent',
     },
 
     textInput: {
-        fontWeight: 'bold',
-        marginStart: 5,
-        fontSize: 20,
-        marginVertical: 10,
-        color: '#d5bc74',
         width: '80%',
+        fontSize: 20,
+        marginStart: 5,
+        color: '#d5bc74',
+        fontWeight: 'bold',
+        marginVertical: 10,
     },
 
     searchIcon: {
         right: 5,
-        position: 'absolute',
         alignSelf: 'center',
+        position: 'absolute',
     },
 });

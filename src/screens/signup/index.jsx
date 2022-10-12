@@ -43,13 +43,11 @@ const styles = StyleSheet.create({
         backgroundColor: 'transparent',
     },
     surface: {
-        marginTop: '30%',
-        alignSelf: 'center',
-        borderRadius: 10,
         padding: 20,
         width: '90%',
-        // marginHorizontal: 10,
-        // paddingHorizontal: 10,
+        borderRadius: 10,
+        marginTop: '30%',
+        alignSelf: 'center',
     },
 
     title: {

@@ -44,33 +44,33 @@ export default RenderCards;
 
 const styles = StyleSheet.create({
     card: {
+        height: 300,
+        width: '45%',
+        borderWidth: 5,
         borderRadius: 20,
+        marginBottom: 20,
+        marginHorizontal: 10,
         borderColor: '#bd8f00',
         backgroundColor: '#bd8f00',
-        borderWidth: 5,
-        width: '45%',
-        height: 300,
-        marginHorizontal: 10,
-        marginBottom: 20,
     },
 
     noteTitle: {
-        color: 'white',
         padding: 5,
-        fontWeight: 'bold',
         fontSize: 16,
+        color: 'white',
+        fontWeight: 'bold',
     },
     noteContent: {
-        color: 'white',
         padding: 5,
+        color: 'white',
     },
 
     deleteIcon: {
+        padding: 10,
+        bottom: -20,
+        borderRadius: 20,
         position: 'absolute',
         alignSelf: 'flex-end',
-        bottom: -20,
         backgroundColor: '#d5bc74',
-        borderRadius: 20,
-        padding: 10,
     },
 });

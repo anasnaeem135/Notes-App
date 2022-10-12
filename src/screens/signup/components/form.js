@@ -92,9 +92,9 @@ const styles = StyleSheet.create({
     },
 
     textInputEmail: {
-        marginTop: 15,
         padding: 10,
         fontSize: 20,
+        marginTop: 15,
         color: '#d5bc74',
         fontWeight: 'bold',
         borderBottomWidth: 3,
@@ -102,9 +102,9 @@ const styles = StyleSheet.create({
     },
 
     textInputPassword: {
-        marginTop: 15,
         padding: 10,
         fontSize: 20,
+        marginTop: 15,
         color: '#d5bc74',
         fontWeight: 'bold',
         borderBottomWidth: 3,
@@ -138,8 +138,8 @@ const styles = StyleSheet.create({
     },
 
     button: {
-        marginTop: 10,
         padding: 20,
+        marginTop: 10,
     },
 
     text: {
@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
     },
 
     alert: {
-        fontWeight: 'bold',
         color: 'red',
+        fontWeight: 'bold',
     },
 });

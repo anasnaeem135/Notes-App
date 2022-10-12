@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import { addNote } from './actions/index';
+
 import Form from './components/form';
 
 const CreateNote = ({ navigation, addNote }) => {
