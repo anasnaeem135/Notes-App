@@ -6,16 +6,20 @@ import {
     TouchableWithoutFeedback,
     StyleSheet,
 } from 'react-native';
-import { connect } from 'react-redux';
-import { useState } from 'react';
-import { bindActionCreators } from 'redux';
 
-import { AntDesign } from '@expo/vector-icons';
+import { useState } from 'react';
+import { useEffect } from 'react';
+
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
 import SearchBar from './components/SearchBar';
 import RenderCards from './components/RenderCards';
+import Account from './components/Account';
+
+import { AntDesign } from '@expo/vector-icons';
+
 import { deleteNote } from './actions/index';
-import { useEffect } from 'react';
 
 const find = function (notes, searchValue) {
     const index = notes.filter(function (todo) {
@@ -67,7 +71,9 @@ const Note = ({ navigation, List, deleteNote }) => {
     return (
         <TouchableWithoutFeedback onPress={() => setOpenIndex(null)}>
             <View style={styles.container}>
+                <Account navigation={navigation} />
                 <SearchBar search={search} onSearchChange={onChange} />
+
                 <FlatList
                     data={searchList}
                     renderItem={renderItem}
@@ -111,19 +117,23 @@ const styles = StyleSheet.create({
     },
 
     plusIcon: {
+        right: 20,
+        bottom: 20,
+        padding: 10,
+        borderRadius: 30,
         position: 'absolute',
         alignSelf: 'flex-end',
-        borderRadius: 30,
         backgroundColor: '#d5bc74',
-        right: 20,
-        padding: 10,
-        bottom: 20,
     },
 
     empty: {
         color: 'red',
-        fontWeight: 'bold',
         fontSize: 20,
+        fontWeight: 'bold',
         alignSelf: 'center',
+    },
+
+    accountView: {
+        flexDirection: 'row',
     },
 });

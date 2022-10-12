@@ -6,11 +6,11 @@ import {
     TouchableOpacity,
     StyleSheet,
 } from 'react-native';
+import Note from '../../note/index';
 
 import { Formik } from 'formik';
 import { editNoteValidationSchema } from '../helpers/index';
 import { FontAwesome } from '@expo/vector-icons';
-import Note from '../../note/Note';
 
 const Form = ({ onSubmit, temp }) => {
     const listObj = {
